@@ -1,0 +1,1 @@
+export const cardStorageKey = "cards";

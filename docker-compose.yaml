@@ -1,0 +1,16 @@
+services:
+    client:
+        build:
+            context: "./client"
+        volumes:
+            - ./client:/app/client
+        ports:
+            - "5173:80"
+
+    server:
+        build:
+            context: "./server"
+        volumes:
+            - ./server:/app/server
+        ports:
+            - "3000:3000"
